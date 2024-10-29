@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valorant Night Market - Kim Villioso</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #2c2c2c, #4a4a4a);
+            color: #fff;
+            text-align: center;
+        }
+        h1 {
+            margin: 20px 0;
+            font-size: 2.5em;
+            color: #f4a261; /* Valorant-like accent color */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .item-card {
+            background: rgba(50, 50, 50, 0.8);
+            border: 2px solid #e63946; /* Valorant-like border color */
+            border-radius: 12px;
+            margin: 15px;
+            padding: 15px;
+            width: 220px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .item-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+        }
+        .item-card img {
+            max-width: 100%;
+            border-radius: 12px;
+            border: 2px solid #f4a261;
+        }
+        .item-card h3 {
+            margin: 10px 0;
+            font-size: 1.5em;
+            color: #f1fa8c; /* Light accent color */
+        }
+        .item-card p {
+            color: #ccc;
+        }
+        .price {
+            font-weight: bold;
+            color: #e63946; /* Price color */
+            font-size: 1.2em;
+        }
+        footer {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: rgba(50, 50, 50, 0.9);
+            border-top: 2px solid #e63946;
+        }
+        footer p {
+            margin: 5px 0;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h1>Valorant Night Market - Kim Villioso</h1>
+    <div class="container" id="item-container"></div>
+
+    <script>
+        // Fetch data from the JSON file
+        fetch('MyItems.json')
+            .then(response => response.json())
+            .then(data => {
+                const container = document.getElementById('item-container');
+                
+                // Render each item card
+                data.Items.forEach(item => {
+                    const card = document.createElement('div');
+                    card.className = 'item-card';
+                    card.innerHTML = `
+                        <img src="${item.image}" alt="${item.name}">
+                        <h3>${item.name}</h3>
+                        <p>${item.description}</p>
+                        <p class="price">${item.price}</p>
+                    `;
+                    container.appendChild(card);
+                });
+            })
+            .catch(error => {
+                console.error('Error fetching the data:', error);
+            });
+    </script>
+    <footer>
+      <p>Designed by: Kim Villioso</p>
+      <p>12-Cooper</p>
+    </footer>
+</body>
+</html>

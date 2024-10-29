@@ -1,0 +1,70 @@
+{
+    "Items": [
+        {
+            "name": "Phantom Prime",
+            "description": "A sleek rifle with a suppressor for stealthy kills.",
+            "price": "2,900 credits",
+            "image": "Phantom Prime.jpeg"
+        },
+        {
+            "name": "Vandal Kuronami",
+            "description": "A powerful rifle that rewards accuracy with one-shot kills.",
+            "price": "2,900 credits",
+            "image": "Vandal Kuronami.jpeg"
+        },
+        {
+            "name": "Operator elderflame",
+            "description": "A sniper rifle for those who enjoy long-range combat.",
+            "price": "5,000 credits",
+            "image": "Operator elderflame.jpeg"
+        },
+        {
+            "name": "Glitchpop Classic",
+            "description": "Your trusty sidearm, effective in all situations.",
+            "price": "800 credits",
+            "image": "Glitchpop Classic.jpeg"
+        },
+        {
+            "name": "Guardian reaver",
+            "description": "A semi-automatic rifle with high accuracy.",
+            "price": "2,700 credits",
+            "image": "Guardian reaver.jpeg"
+        },
+        {
+            "name": "Oni Bucky",
+            "description": "A shotgun that excels in close-range encounters.",
+            "price": "900 credits",
+            "image": "Oni Bucky.jpeg"
+        },
+        {
+            "name": "Sovereign Spectre",
+            "description": "A versatile submachine gun ideal for rapid engagements.",
+            "price": "1,600 credits",
+            "image": "Sovereign Spectre.jpeg"
+        },
+        {
+            "name": "Champions Phantom",
+            "description": "A high-tech rifle with customizable features for precise shots.",
+            "price": "3,000 credits",
+            "image": "Champions Phantom.jpeg"
+        },
+        {
+            "name": "Ares Ion",
+            "description": "An automatic rifle that dominates in sustained fire.",
+            "price": "2,200 credits",
+            "image": "Ares Ion.jpeg"
+        },
+        {
+            "name": "Reaver Sheriff",
+            "description": "A revolver that delivers deadly firepower in a compact form.",
+            "price": "1,200 credits",
+            "image": "Reaver Sheriff.jpeg"
+        },
+        {
+            "name": "Kuronami Marshal",
+            "description": "A powerful lever-action sniper rifle for sharpshooters.",
+            "price": "4,200 credits",
+            "image": "Kuronami Marshal.jpeg"
+        }
+    ]
+}
